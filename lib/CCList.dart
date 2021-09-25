@@ -57,8 +57,8 @@ class CCListState extends State<CCList>{
 
     List<Widget> _buildList(){
       return data.map((CCData f) => ListTile(
-        title: Text(f.symbol),
-        subtitle: Text(f.name),
+        title: Text(f.name),
+        subtitle: Text(f.symbol),
         leading: CircleAvatar(child: Text(f.rank.toString())),
         trailing: Text('\$${f.price.toString()}'),
       )).toList();
